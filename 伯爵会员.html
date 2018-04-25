@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #262626;
+        }
+        a{
+            text-decoration: none;
+            color: #808080;
+        }
+        .box{
+            width: 430px;
+            height: 450px;
+            position: absolute;
+            background-color: #ffffff;
+            left: 50%;
+            top: 50%;
+            margin: -220px -225px;
+            display: block;
+        }
+        .top{
+            height: 55px;
+            width: 410px;
+            line-height: 55px;
+            padding-left: 20px;
+            background-color: #c9c9c9;
+        }
+        .but{
+            height: 38px;
+            width: 318px;
+            margin-top: 65px;
+            margin-left: 55px;
+            padding-left: 10px;
+        }
+        .but1{
+            height: 38px;
+            width: 318px;
+            margin-top: 20px;
+            margin-left: 55px;
+            padding-left: 10px;
+        }
+        button{
+            height: 40px;
+            width: 330px;
+            margin: 20px 0px 20px;
+            margin-left: 55px;
+            border-radius: 10px;
+            border: 1px solid red;
+            background-color:#64c6f6;
+
+        }
+       .hui{
+            display: block;
+            margin-left: 55px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .sp{
+            display: block;
+            text-align: center;
+            font-size: 12px;
+        }
+        .getpassworddiv{
+            display:none;
+            width: 598px;
+            height: 472px;
+            position: absolute;
+            background-color: #ffffff;
+            left: 50%;
+            top: 50%;
+            margin-left:  -300px;
+            margin-top: -241px;;
+            background-color: greenyellow;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var spa=document.getElementById("sp").children[0];
+            var box=document.getElementsByClassName("box")[0];
+            var getpassworddiv=document.getElementsByClassName("getpassworddiv")[0];
+            console.log(box);
+            console.log(getpassworddiv);
+            console.log(spa);
+            spa.onclick=function(){
+                box.style.display="none";
+                getpassworddiv.style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="top">
+        <p>会员登录</p>
+    </div>
+    <input type="text"  placeholder="手机号" class="but"/>
+    <input type="password" placeholder="密码" class="but1"/>
+    <button>登陆</button>
+    <p class="hui">请登录您的铂爵VIP会员号,下载您的婚纱照.</p>
+    <span class="sp" id="sp"><a href="#">忘记密码</a></span>
+</div>
+<div class="getpassworddiv" >
+    <img src="1/QQ截图20180423131723.png" alt=""/>
+
+</div>
+
+</body>
+</html>

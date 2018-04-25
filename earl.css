@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+}
+head{
+    display: none;
+}
+body{
+    text-decoration: none;
+
+}
+p{
+    color: grey;
+}
+ul{
+    list-style: none;
+}
+li{
+    float:left;
+}
+.nav_bar{
+    background: black;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
+a:link {color: grey} /* 未访问的链接 */
+a:visited {color: grey}	/* 已访问的链接 */
+a:hover {color: white}	/* 鼠标移动到链接上 */
+a:active {color: white}	/* 选定的链接，即鼠标按下去的时候不松开显示的状态 */
+
+.nav_bar_container{
+    margin: 0 auto;
+    background: #000;
+    height:100px;
+    width: 1200px;
+}
+.nav_bar_menu_contain{
+    height: 100px;
+    width: 400px;
+    float: right;
+}
+.nav_bar_icon{
+    background: url("./image/logo3.png") no-repeat;
+    color: white;
+    height:80px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+}
+
+.nav_bar_menu{
+    margin: 40px 0;
+}
+
+.nav_bar_li{
+    margin-left: 25px;
+}
+.img_container{
+    height: 253px;
+    width: 100%;
+}
+.main{
+    background-color: #212121;
+    height: 1350px;
+}
+.img_block{
+    width: 1200px;
+    margin: 0 auto;
+}
+.img_title_block{
+    height: 200px;
+    padding: 5px;
+    background: url("./image/week_customer.png") no-repeat center;
+}
+
+.src_list{
+    width: 1210px;
+    height:1050px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.src_list_item{
+    float: left;
+    width: 392px;
+    height: 330px;
+    margin: 4px 9px 10px 0;
+    position: relative;
+    background-color: #212121;
+}
+.img_content img{
+    width: 370px;
+    height: 260px;
+    margin: 10px;
+}
+
+.img_opt{
+    height: 30px;
+    width: 100px;
+    line-height: 20px;
+    margin: 10px 0 0 10px;
+}
+
+.index_num{
+    margin-left: 30px;
+}
+
+.index_menu{
+    height: 60px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.index_menu ul{
+    height: 50%;
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+}
+
+.footer{
+    height: 600px;
+    background: #000000;
+    border-top: 1px solid #313131;
+}
+
+.footer_src{
+    height:100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+.foot_img_div{
+    width: 700px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 60px 0 0 20px;
+}
+
+.footer_area{
+    width: 950px;
+    height: 90px;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+.shop_phone_border{
+    /*border-top: 2px dotted darkgrey;*/
+    /*font-size: 18px;*/
+    /*color: grey;*/
+    width: 870px;
+    height: 45px;
+    border-top: 1px dashed #484848;
+    float: left;
+    color: #999;
+    font-size: 18px;
+    margin-left: 150px;
+    /*padding: 20px 0 0 300px;*/
+}
+.shop_phone_content{
+    padding: 20px 0 0 150px;
+}
+
+.shop_phone_content a:link{
+    color: white;
+}

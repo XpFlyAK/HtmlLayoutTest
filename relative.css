@@ -1,0 +1,122 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 ;
+}
+p{
+    font-size: 20px;
+    line-height: 1em;
+    padding: 1em;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+.container{
+    background-color: grey;
+    padding: 0 10px 0 10px;
+}
+
+
+
+.head{
+    position: relative;
+    border: 3px solid orange;
+}
+
+.head_area{
+    background-color: orange;
+}
+
+.span_head{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.span_foot{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    bottom: 0;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.middle_contain{
+    border: 3px solid darkgreen;
+    position: relative;
+}
+
+.middle_area{
+    background-color: darkgreen;
+}
+
+.first{
+    border: 3px solid palevioletred;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    position: relative;
+}
+
+.first li{
+    margin-top: 20px;
+
+}
+
+.first_area{
+  background-color: palevioletred;
+}
+.second_area{
+    display: inline-block;
+    width: 74.7%;
+    position: relative;
+    border: 3px solid #64c6f6;
+}
+
+.second_area span{
+    background-color: #64c6f6;
+}
+
+.top_section{
+    border: 3px solid #ffaa55;
+    width: 100%;
+    position: relative;
+}
+
+.top_section span{
+    background-color: #ffaa55;
+}
+
+.middle_section{
+    border: 3px solid greenyellow;
+    width: 100%;
+    position: relative;
+}
+.middle_section span{
+    background-color: greenyellow;
+}
+
+.bottom_section{
+    border: 3px solid black;
+    width: 100%;
+    position: relative;
+}
+
+.bottom_section span{
+    background-color: black;
+}
+
+
+
