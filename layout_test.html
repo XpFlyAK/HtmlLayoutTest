@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet"
+          href="layout_test.css"/>
 </head>
 <body>
-$END$
+<div class="total">
+    <div class="container">
+        <div class="head_area">
+            <div class="title">
+                <img src="http://zh.learnlayout.com/images/logo.png">
+                <span>学习<a>CSS</a>布局</span>
+            </div>
+        </div>
+    </div>
+    <div class="under_body">
+        <div class="p_title">
+            <span><b>"display"</b>属性</span>
+        </div>
+        <div class="content_container">
+            <p>display 是CSS中最重要的用于控制布局的属性。
+                每个元素都有一个默认的 display 值，
+                这与元素的类型有关。对于大多数元素它们的
+                默认值通常是 block 或 inline 。一个
+                block 元素通常被叫做块级元素。一个
+                inline 元素通常被叫做行内元素。</p>
+        </div>
+        <div class="content_title">
+            <span>block</span>
+        </div>
+        <div class="container_area">
+            <span class="span_head">&#60;div&#62;</span>
+                <p>
+                    div 是一个标准的块级元素。
+                    一个块级元素会新开始一行并且尽可
+                    能撑满容器。其他常用的块级元素包括
+                    p 、 form 和HTML5中的新元素：
+                    header 、 footer 、 section
+                    等等。
+                </p>
+            <span class="span_foot">&#60;/div&#62;</span>
+        </div>
+        <div class="content_title">
+            <span>inline</span>
+        </div>
+        <div class="content_container">
+            <p>
+                span 是一个标准的行内元素。
+                一个行内元素可以在段落中
+                &#60;span&#62; 像这样 &#60;/span&#62; 包裹一些文
+                字而不会打乱段落的布局。 a 元素是最
+                常用的行内元素，它可以被用作链接。
+            </p>
+        </div>
+        <div class="content_title">
+            <span>none</span>
+        </div>
+        <div class="content_container">
+            <p>另一个常用的display值是 none 。
+                一些特殊元素的默认 display 值是它
+                ，例如 script 。 display:none
+                通常被 JavaScript 用来在不删除元素
+                的情况下隐藏或显示元素。</p>
+        </div>
+        <div class="content_container">
+            <p>它和 visibility 属性不一样。把 display
+                设置成 none 元素不会占据它本来应该显示
+                的空间，但是设置成
+                visibility: hidden; 还会占据空间。</p>
+        </div>
+        <div class="content_title">
+            <span>其他 display 值</span>
+        </div>
+        <div class="content_container">
+            <p>还有很多的更有意思的 display 值，例如
+                list-item 和 table
+                。这里有一份详细的列表。之后我们会讨
+                论到 inline-block 和 flex 。</p>
+        </div>
+        <div class="content_title">
+            <span>额外加分点</span>
+        </div>
+        <div class="content_container">
+            <p>
+                就像我之前讨论过的，每个元素都有一个默认的
+                display 类型。不过你可以随时随地的重写它！
+                虽然“人为制造”一个行内元素可能看起来很难以
+                理解，不过你可以把有特定语义的元素改成行内
+                元素。常见的例子是：把 li 元素修改成 inline
+                ，制作成水平菜单。
+            </p>
+        </div>
+        <div class="button_area">
+            <div class="button_inline_left">
+                <a>上一页</a></div>
+            <div class="button_inline_right">
+                <a>下一页</a></div>
+        </div>
+        <div class="page_area">
+            <span>1/12</span>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Code by <a  href="https://github.com/XpFlyAK" target="_blank">
+            XpFlyAK</a></span>
+    </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    position: relative;
+}
+
+.head_area {
+    background: darkgrey;
+    height: 150px;
+    position: relative;
+}
+
+a:hover {
+    color:  white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: #212121;
+}
+
+a:active {
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.title span{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    font-size: 36px;
+}
+
+.inline_m{
+    display: inline;
+}
+.title_detail{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.total{
+    position: relative;
+    margin: 0 auto;
+}
+
+.under_body{
+    position: relative;
+    margin: 0 10px;
+
+}
+
+.p_title{
+    margin: 0 auto;
+    width: 300px;
+    padding: 30px;
+    position: relative;
+}
+.p_title span{
+    font-size: 30px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.content_container{
+    margin: 0 auto;
+    width: 800px;
+    padding: 0 0 20px 30px;
+}
+
+.content_container p{
+    line-height: 1.5em;
+}
+
+.content_title{
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 0 20px 30px;
+}
+.content_title span{
+    font-size: 32px;
+}
+
+.container_area{
+    width: 100%;
+    position: relative;
+    border: 3px solid green;
+}
+
+.container_area span{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background: green;
+}
+.container_area p{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.span_head{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.span_foot{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.button_area{
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px 0 0 15%;
+    position: relative;
+}
+.button_inline_left{
+    border: 3px solid grey;
+    display: inline-block;
+    height: 100%;
+}
+.button_inline_right{
+    border: 3px solid grey;
+    display: inline-block;
+    height: 100%;
+    margin-left: 30px;
+}
+.button_inline_right a{
+    padding: 5px;
+}
+
+.button_inline_left a{
+    padding: 5px;
+}
+.button_inline_left a:hover{
+    color: cornflowerblue;
+}
+.button_inline_right a:hover{
+    color: cornflowerblue;
+}
+.page_area{
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+}
+
+.footer{
+    background: grey;
+}
+.footer span{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+
