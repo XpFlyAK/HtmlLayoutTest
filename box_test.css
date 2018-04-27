@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    border: 3px solid greenyellow;
+}
+
+.first{
+    height:80px;
+    background: #ffaa55;
+    float: right;
+    width: 100px;
+}
+
+.second{
+    height: 80px;
+    background: #64c6f6;
+    float: left;
+    width: 100px;
+}
+.third{
+    height: 80px;
+    background: #ff0000;
+    float: left;
+    width: 100px;
+}

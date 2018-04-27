@@ -76,6 +76,7 @@ a {
     font-size: 30px;
     width: 600px;
     margin: 0 auto;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .content_container{
@@ -96,6 +97,7 @@ a {
 }
 .content_title span{
     font-size: 32px;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .container_area{
@@ -130,19 +132,25 @@ a {
 .button_area{
     margin: 0 auto;
     width: 600px;
-    padding: 10px 0 0 15%;
     position: relative;
 }
 .button_inline_left{
-    border: 3px solid grey;
+    background: linear-gradient(to bottom, rgba(0,0,255,0.7), rgba(0,0,255,0.3));
+    border-radius: 3px;
+    padding: 5px 20px;
     display: inline-block;
+    box-shadow: 2px 2px 2px #333333;
+    margin-left: 25%;
     height: 100%;
 }
 .button_inline_right{
-    border: 3px solid grey;
+    padding: 5px 20px;
     display: inline-block;
     height: 100%;
-    margin-left: 30px;
+    margin-left: 60px;
+    box-shadow: 2px 2px 2px #333333;
+    background: linear-gradient(to bottom, rgba(0,0,255,0.7), rgba(0,0,255,0.3));
+    border-radius: 3px;
 }
 .button_inline_right a{
     padding: 5px;
@@ -152,10 +160,13 @@ a {
     padding: 5px;
 }
 .button_inline_left a:hover{
-    color: cornflowerblue;
+    color: white;
+
+    text-shadow: 1px 1px 1px white;
 }
 .button_inline_right a:hover{
-    color: cornflowerblue;
+    color: white;
+    text-shadow: 1px 1px 1px white;
 }
 .page_area{
     margin: 0 auto;
