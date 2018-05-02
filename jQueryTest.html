@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="./jQueryTest.css" rel="stylesheet">
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+           /* $("ul li").click(function(){
+                var _this = this;
+                $("ul").hide(3000,showAlert(_this.innerText));
+                $("ul").toggle(2000,function () {
+                    $("ul").toggle();
+                });
+            });
+
+            $(".slide_contain").click(function () {
+                $(".slide_content").slideToggle(1000);
+                $("title").text("jQueryTest");
+            });
+
+            $(".flag").click(function(){
+                var div = $(".flag");
+                $(".anim_button").text("高度为"+div.outerHeight()+"  宽度为"+div.outerWidth());
+                div.animate({height:"300px"},"slow");
+                div.animate({width:"300px" ,height:"300px"},"slow");
+                div.animate({height:"100px"},"slow");
+                div.animate({width:"100px",height:"100px"},"slow");
+            });
+
+            $("#btn").click(function(){
+                $("#list").append("<li>"+$("input").val()+"</li>");
+            });*/
+
+           $('li').click(function(){
+                $('li').attr("id","select")
+           });
+
+        });
+
+        function showAlert(value){
+            alert(value);
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div class="head">
+    <p>学习jQuery</p>
+</div>
+<div class="container">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div class="slide_contain">
+        点我下滑
+    </div>
+    <div class="slide_content">
+        hello world!
+    </div>
+    <div class="anim_button">
+
+    </div>
+    <div class="flag"></div>
+    <div>
+        <input id="input" type="text" value="" >
+        <button type="button" id="btn">增加</button>
+        <ul id="list">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div id="banner_list">
+            <a href="#"><img src="./image/257c96a5ef.jpg"></a>
+            <a href="#"><img src="./image/24b1841f15.jpg"></a>
+            <a href="#"><img src="./image/1356da4267.jpg"></a>
+            <a href="#"><img src="./image/47a0a90ec0.jpg"></a>
+        </div>
+        <div class="banner_title">
+
+        </div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
