@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contain {
+    position: relative;
+    margin: 0 10px;
+    padding-top: 20px;
+    background-color: #c1e5d6;
+}
+
+.shot_wall {
+    height: 400px;
+    margin: 0 auto;
+    border:1px solid grey;
+    overflow: hidden;
+    width: 600px;
+    position: relative;
+}
+
+.shot_contain {
+    padding-top: 10px;
+    height: 50px;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.bullet{
+    position: absolute;
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="horizontal_vp.css">
+    <script>
+        $(function () {
+            $('li').click(function () {
+                var _this = $(this);
+                _this.addClass('select')
+
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <button class="button" style="vertical-align:middle">
+        <span>hover</span>
+    </button>
+    <div class="vp_contain">
+        <div class="tag">
+            <ul>
+                <li class="li_tag"></li>
+                <li class="li_tag"></li>
+                <li class="li_tag"></li>
+                <li class="li_tag"></li>
+            </ul>
+        </div>
+        <!--    <div class="image_contain">
+                <a href="#"><img src="./image/257c96a5ef.jpg"></a>
+                <a href="#"><img src="./image/24b1841f15.jpg"></a>
+                <a href="#"><img src="./image/1356da4267.jpg"></a>
+                <a href="#"><img src="./image/47a0a90ec0.jpg"></a>
+            </div>-->
+        <ul>
+            <li><a href="#"><img src="./image/257c96a5ef.jpg"></a></li>
+            <li><a href="#"><img src="./image/24b1841f15.jpg"></a></li>
+            <li><a href="#"><img src="./image/1356da4267.jpg"></a></li>
+            <li><a href="#"><img src="./image/47a0a90ec0.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -6,73 +6,28 @@
     <script src="./jQuery/jquery-1.12.4.js"></script>
     <script>
         $(function () {
-           /* $("ul li").click(function(){
-                var _this = this;
-                $("ul").hide(3000,showAlert(_this.innerText));
-                $("ul").toggle(2000,function () {
-                    $("ul").toggle();
-                });
-            });
-
-            $(".slide_contain").click(function () {
-                $(".slide_content").slideToggle(1000);
-                $("title").text("jQueryTest");
-            });
-
-            $(".flag").click(function(){
-                var div = $(".flag");
-                $(".anim_button").text("高度为"+div.outerHeight()+"  宽度为"+div.outerWidth());
-                div.animate({height:"300px"},"slow");
-                div.animate({width:"300px" ,height:"300px"},"slow");
-                div.animate({height:"100px"},"slow");
-                div.animate({width:"100px",height:"100px"},"slow");
-            });
-
-            $("#btn").click(function(){
-                $("#list").append("<li>"+$("input").val()+"</li>");
-            });*/
-
+            var n = 0;
+           $('#banner_list a:first-child').show();
+           $('li:first-child').addClass('select');
            $('li').click(function(){
-                $('li').attr("id","select")
+               $(this).addClass('select').siblings().removeClass('select');
+               $('#banner_list a').eq(n).fadeOut(500).parent().children()
+                   .eq($(this).text()-1).fadeIn(1000);
+               n = $(this).text()-1;
            });
+
+           setInterval(function () {
+               var s = (n+1)%4;
+               $('li').eq(s).trigger('click');
+           },3000);
 
         });
 
-        function showAlert(value){
-            alert(value);
-        }
     </script>
     <title>Title</title>
 </head>
 <body>
-<div class="head">
-    <p>学习jQuery</p>
-</div>
 <div class="container">
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-    <div class="slide_contain">
-        点我下滑
-    </div>
-    <div class="slide_content">
-        hello world!
-    </div>
-    <div class="anim_button">
-
-    </div>
-    <div class="flag"></div>
-    <div>
-        <input id="input" type="text" value="" >
-        <button type="button" id="btn">增加</button>
-        <ul id="list">
-            <li>1</li>
-            <li>2</li>
-        </ul>
-    </div>
     <div class="banner">
         <div id="banner_list">
             <a href="#"><img src="./image/257c96a5ef.jpg"></a>
@@ -84,10 +39,10 @@
 
         </div>
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <li class="li_style">1</li>
+            <li class="li_style">2</li>
+            <li class="li_style">3</li>
+            <li class="li_style">4</li>
         </ul>
 
     </div>

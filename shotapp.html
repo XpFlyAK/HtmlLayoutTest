@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="shotapp.css" type="text/css">
+    <script src="./jQuery/jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+            var i = 0;
+            $("#sub_btn").click(function () {
+                var p_obj = "<span class='bullet' >" + $("#in_text").val() + "</span>";
+
+                $('.shot_wall').append(p_obj);
+
+                $('.bullet').eq(i).css({
+                    "font-size": (Math.random() * 30 + 10).toString() + 'px',
+                }).css({
+                    right: (-$('.bullet').eq(i).innerWidth()).toString() + 'px',
+                    top: (10 + Math.random() * ($('.shot_wall').innerHeight() - 100)).toString() + 'px',
+                    color:createColor()
+                });
+
+                console.log(-$('.bullet').eq(i).width());
+
+                $('.bullet').eq(i).animate({
+                    right: $('.shot_wall').innerWidth()
+                }, Math.random() * 5000 + 5000, function () {
+                    this.remove();
+                    i = $('.shot_wall').children().length;
+                });
+
+                i++;
+            });
+
+            $('#clear').click(function(){
+                $('.shot_wall').children().remove();
+            });
+
+            function createColor() {
+                var colorString = '#';
+                var red = parseInt(Math.random() * 255).toString(16);
+                var green = parseInt(Math.random() * 255).toString(16);
+                var blue = parseInt(Math.random() * 255).toString(16);
+                console.log(colorString + red + green + blue);
+                return colorString + red + green + blue;
+            }
+
+        });
+    </script>
+</head>
+<body>
+<div class="contain">
+    <div class="shot_wall">
+
+    </div>
+    <div class="shot_contain">
+        <label><input id="in_text" type="text"></label>
+        <label><input id="sub_btn" type="button" value="shot"></label>
+        <label><input id="clear" type="button" value="clear"></label>
+    </div>
+</div>
+</body>
+</html>
