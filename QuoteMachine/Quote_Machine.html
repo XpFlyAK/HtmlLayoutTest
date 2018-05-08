@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Quote_Machine.css" type="text/css">
+    <script src="../jQuery/jquery-1.12.4.js"></script>
+    <script src="../dist/js/jquery-animate-color.js"></script>
+    <script src="ArrayTest.js"></script>
+    <script>
+        $(function () {
+            $(".btn_next").click(function () {
+                var color = getColor();
+                $.ajax({
+                    headers: {
+                        "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
+                        Accept: "application/json",
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
+                    success: function (r) {
+                        var quote = r.quote;
+                        var author = r.author;
+                        console.log(r.quote);
+                        console.log(r.category);
+                        $('.content span,.author_content span').fadeOut(1000, function () {
+                            $('#main_word').text(quote);
+                            $('#author').text("——" + author);
+                            $('.content span,.author_content span').css({'color': color}).fadeIn(1000);
+                        });
+                    }
+                });
+                console.log(color);
+                $('body,.btn_next,.btn_icon')
+                    .animate({
+                        backgroundColor: color
+                    });
+
+
+            });
+        });
+
+        function getColor() {
+            var r = Math.floor(Math.random() * 255);
+            var g = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+            return "rgba(" + r + "," + g + "," + b + ",1)";
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <span id="main_word">When a man is denied the right to
+            live the life he believes in, he has no choice
+            but to become an outlaw.</span>
+    </div>
+    <div class="author_content">
+        <span id="author">
+            ——Nelson Mandela
+        </span>
+    </div>
+    <div class="btn_container">
+        <div class="btn_icon">
+            <img src="../image/git2.png" class="img_icon">
+        </div>
+        <div class="btn_icon">
+            <img src="../image/git3.png" class="img_icon">
+        </div>
+        <div class="btn_next">
+            <span id="next_content">next</span></div>
+    </div>
+
+</div>
+</body>
+</html>
