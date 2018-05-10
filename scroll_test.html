@@ -5,17 +5,53 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="scroll_test.css">
     <script src="./dist/js/bootstrap.js"></script>
+    <script src="jQuery/jquery-1.12.4.js"></script>
     <link href="./dist/css/bootstrap.css"
           rel="stylesheet">
     <script>
         $(function () {
+            console.log($('.area1').offset().top);
+            console.log($('.area2').offset().top);
+            var oldHeight = $(window).scrollTop();
 
-        })
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= $('.area3').offset().top) {
+                    $('.nav li').removeClass('active')
+                        .eq(2).addClass('active');
+                } else if ($(window).scrollTop() >= $('.area2').offset().top) {
+                    $('.nav li').removeClass('active')
+                        .eq(1).addClass('active');
+                } else if ($(window).scrollTop() >= $('.area1').offset().top) {
+                    $('.nav li').removeClass('active')
+                        .eq(0).addClass('active');
+                }
+
+                oldHeight = $(window).scrollTop();
+
+                $('.float-window').animate({
+                    bottom:100
+                },2000)
+
+            });
+
+
+            $('.non-pad-ul li').eq(0).click(function () {
+                $('html,body').animate({scrollTop:$('.area1').offset().top},500);
+            })
+            $('.non-pad-ul li').eq(1).click(function () {
+                $('html,body').animate({scrollTop:$('.area2').offset().top},500)
+            })
+            $('.non-pad-ul li').eq(2).click(function () {
+                $('html,body').animate({scrollTop:$('.area3').offset().top},500)
+            })
+
+        });
     </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm  fixed-top nb">
-    <a class="navbar-brand logo" alt="点击进入首页" target="_blank" href="#"><img src="./image/github.png"></a>
+    <a class="navbar-brand logo" alt="点击进入首页" target="_blank" href="#"><img
+            src="./image/github.png"></a>
     <ul class="nav nav-pills">
         <li class="nav-item active">
             <a class="nav-link" href="#">JavaScript</a></li>
@@ -59,10 +95,32 @@
         </div>
         <h2>WebClinet</h2>
     </div>
-</div>
-<div  id="footer" class="container-fluid">
+
+    <div class="float-window">
+        <ul class="non-pad-ul">
+            <li>
+                <div class="window-menu">
+                    <img src="image/git1.png" class="normal_icon">
+                </div>
+            </li>
+            <li>
+                <div class="window-menu">
+                    <img src="image/git2.png" class="normal_icon">
+                </div>
+            </li>
+            <li>
+                <div class="window-menu">
+                    <img src="image/git3.png" class="normal_icon">
+                </div>
+            </li>
+        </ul>
+    </div>
 
 </div>
+<div id="footer" class="container-fluid">
+
+</div>
+
 
 
 </body>

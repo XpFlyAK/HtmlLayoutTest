@@ -1,65 +1,94 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     box-sizing: border-box;
 }
-
-#container{
-    padding: 0 80px;
-    margin-top: 80px;
+li{
+    list-style: none;
 }
-#footer{
+
+
+#container {
+    padding: 0 80px;
+}
+
+#footer {
     height: 100px;
     background-color: #979797;
     box-shadow: 0 -3px 3px #606166;
 }
 
-.logo{
+.logo {
     padding: 150px;
 }
 
-li a:hover{
+li a:hover {
     color: white;
 }
 
-li a:visited{
+li a:visited {
 
 }
 
-li a:link{
+li a:link {
     color: white;
 }
 
-li a:active{
+li a:active {
 
 }
 
-.active{
+.active {
     background-color: #64c6f6;
     color: white;
     border-radius: 5px;
 
 }
 
-.nb{
+.nb {
     height: 80px;
     background-color: #722872;
     box-shadow: 1px 1px 5px black;
 }
 
-
-.area1{
+.area1 {
+    padding-top: 80px;
     height: 300px;
     background-color: #D8FF8F;
 }
 
-.area2{
+.area2 {
     height: 600px;
     background: #94FFBA;
     box-shadow: 0 -3px 3px #606166;
 }
 
-.area3{
-    height: 200px;
+.area3 {
+    height: 800px;
     background-color: #FFF24F;
     box-shadow: 0 -3px 3px #606166;
 }
+.non-pad-ul{
+    padding: 0;
+}
+
+.float-window {
+    background: #6ac2d9;
+    position: absolute;
+    height: 210px;
+    width: 50px;
+    top: 200px;
+    left: 0;
+}
+.window-menu{
+    position: relative;
+    float: left;
+    height: 70px;
+    width: 50px;
+}
+
+.normal_icon{
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+
