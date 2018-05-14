@@ -13,7 +13,7 @@
             console.log($('.area1').offset().top);
             console.log($('.area2').offset().top);
             var oldHeight = $(window).scrollTop();
-
+            var newTime = 0;
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= $('.area3').offset().top) {
                     $('.nav li').removeClass('active')
@@ -27,10 +27,13 @@
                 }
 
                 oldHeight = $(window).scrollTop();
+                newTime = new Date().getTime();
+                if(newTime<){
+                    $('.float-window').animate({
 
-                $('.float-window').animate({
-                    bottom:100
-                },2000)
+                    },2000)
+                }
+
 
             });
 

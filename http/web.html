@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQuery/jquery-1.12.4.js"></script>
+    <link href="web.css" type="text/css" rel="stylesheet">
+    <script>
+
+        $(function () {
+            var base_url = "https://wia.crland.com.cn/";
+            var home_url = base_url + 'backofficeapi/api/homepage.do';
+            var note_url = base_url + "backofficeapi/store/course/notes.do";
+            var login_url = base_url + "memberapi/api/login.do";
+            $('#btn_send').on('click', function () {
+                var bean = function (mobile, password) {
+                    this.area = '86';
+                    this.mobile = mobile;
+                    this.password = password;
+                };
+                var obj = {storeId:1};
+
+                /*$.get(home_url,function (t) {
+                    console.log(t)
+                });*/
+                fetch(home_url).then((response)=>response.json())
+                                .then((r)=>console.log(r))
+                                .catch((e)=>console.log(e));
+            })
+        });
+    </script>
+</head>
+<body>
+<form>
+    <button id="btn_send" type="button">发送</button>
+    <label>
+        <input type="text" id="name"/>
+    </label>
+    <label>
+        <input type="password" id="pw"/>
+    </label>
+    <input type="submit" value="登录" id="btn_login"/>
+
+</form>
+</body>
+</html>
